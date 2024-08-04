@@ -4,7 +4,7 @@ const Memory = ({ memory }: any) => {
 
   return (
     <>
-      <div className="relative my-16 md:mb-7">
+      <div className="relative my-16 md:mb-7 min-h-[80vh] flex flex-col items-center justify-center" id="memory">
         <div className="travigo-container flex items-center justify-between gap-16 xl:gap-9 lg:flex-col-reverse">
           <div className="flex items-center justify-start lg:justify-center w-full max-w-md">
             <img

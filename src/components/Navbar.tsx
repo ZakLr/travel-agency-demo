@@ -35,22 +35,22 @@ const Navbar = ({ navlinks }: any) => {
       >
         <nav className="flex items-center justify-between travigo-container">
           <NavLink to={`/`} className="flex items-center">
-            <img src={logo} alt="logo/img" className="w-22 h-9 object-fill" />
+            <h1 className="text-4xl md:text-3xl">LOGO</h1>
           </NavLink>
           <ul className="flex items-center lg:hidden gap-7">
             {navlinks?.map((val: any, i: any) => (
               <li key={i}>
-                <NavLink to={"#"} className="text-lg text-slate-900">
-                  {val.link}
-                </NavLink>
+                <a href={val.id}>{val.link}</a>
               </li>
             ))}
           </ul>
           <ul className="flex items-center lg:hidden">
             <li>
-              <button type="button" className="button-emrald px-7 text-base">
-                Join Us
-              </button>
+              <a
+                href="#contact"
+                type="button" className="rounded-xl bg-primary p-3 px-7 text-base">
+                Contact Us
+              </a>
             </li>
           </ul>
           <ul className="hidden lg:flex items-center">
