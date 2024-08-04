@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
+interface PlacesCarousselProps {
+  images: string[];
+  autoSlide?: boolean;
+  autoSlideInterval?: number;
+}
 
 export default function PlacesCaroussel({
   images,
   autoSlide = true,
   autoSlideInterval = 4000,
-}) {
+}: PlacesCarousselProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -26,7 +31,7 @@ export default function PlacesCaroussel({
     setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  const handleDotClick = (index) => {
+  const handleDotClick = (index:any) => {
     setActiveIndex(index);
   };
 
@@ -37,7 +42,7 @@ export default function PlacesCaroussel({
       data-carousel="slide"
     >
       <div className="relative  overflow-hidden rounded-lg min-h-[90vh]">
-        {images.map((image, index) => (
+        {images.map((image:any, index:any) => (
           <div
             key={index}
             className={`absolute w-full  h-full transition-opacity duration-700 ease-in-out ${
@@ -67,7 +72,7 @@ export default function PlacesCaroussel({
 
       {/*the dots */}
       <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        {images.map((_, index) => (
+        {images.map((_:any, index:any) => (
           <button
             key={index}
             type="button"

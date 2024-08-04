@@ -17,7 +17,7 @@ const Testimonials = ({ testimonials }:{testimonials:any}) => {
           role="list"
           className="mx-auto mt-16  gap-6 sm:gap-8 lg:mt-20 lg:max-w-none flex flex-wrap items-center justify-center"
         >
-          {testimonials.map((testimonial) => (
+          {testimonials.map((testimonial:any) => (
             <li key={testimonial.id}>
               <figure className="max-w-lg mx-auto text-center bg-white p-6 rounded-2xl shadow-md shadow-primary ">
                 <svg
