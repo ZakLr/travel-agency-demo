@@ -57,14 +57,10 @@ const Navbar = ({ navlinks }: any) => {
             <li>
               <button
                 type="button"
-                className="flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer"
+                className="flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer  text-2xl"
                 onClick={onTriggerPopup}
               >
-                <img
-                  src={menu}
-                  alt="menu/svg"
-                  className="object-cover shadow-sm filter"
-                />
+                &#9776;
               </button>
             </li>
           </ul>

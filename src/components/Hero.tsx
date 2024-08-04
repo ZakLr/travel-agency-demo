@@ -18,11 +18,9 @@ const Hero = ({ hero }: any) => {
             </h1>
             <p className="text-white my-5 text-center sm:text-sm">{text}</p>
             <div className="flex items-center justify-center gap-11 sm:gap-3 sm:flex-col sm:w-full">
+              
               <button type="button" className="button-emrald">
-                {btn1}
-              </button>
-              <button type="button" className="button-light">
-                {btn2}
+                <a href="#contact">{btn2}</a>
               </button>
             </div>
           </div>

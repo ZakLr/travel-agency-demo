@@ -16,14 +16,7 @@ const PopupMenu = ({ navlinks, popupState }: any) => {
               <NavLink to={`#`}>{val.link}</NavLink>
             </li>
           ))}
-          <li>
-            <button
-              type="button"
-              className="button-light sm:w-auto shadow-slate-300 rounded-lg"
-            >
-              Join Us
-            </button>
-          </li>
+          
         </ul>
       </nav>
     </>

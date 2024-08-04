@@ -47,7 +47,6 @@ const navlinks = [
   { link: "Values", id: "#memory" },
   { link: "Explore", id: "#explore" },
   { link: "Testimonials", id: "#testimonials" },
-  { link: "Contact", id: "#contact" },
 ];
 
 const hero = {
